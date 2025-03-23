@@ -1,0 +1,95 @@
+root@SK:~# history
+    1  whoami
+    2  ls
+    3  sudo apt update
+    4  sudo apt install -y htop nmon
+    5  htop
+    6  nmon
+    7  df -h > /var/log/disk_usage.log
+    8  du -sh /home/* >> /var/log/disk_usage.log
+    9  crontab -e
+   10  ps aux --sort=-%cpu | head -10 > /var/log/top_processes.log
+   11  crontab -e
+   12  sudo useradd -m -s /bin/bash sarah
+   13  sudo useradd -m -s /bin/bash mike
+   14  sudo passwd sarah
+   15  sudo passwd mike
+   16  sudo mkdir /home/sarah/workspace
+   17  sudo mkdir /home/mike/workspace
+   18  sudo chown sarah:sarah /home/sarah/workspace
+   19  sudo chown mike:mike /home/mike/workspace
+   20  sudo chmod 700 /home/sarah/workspace
+   21  sudo chmod 700 /home/mike/workspace
+   22  PASS_MAX_DAYS   30
+   23  sudo nano /etc/login.defs
+   24  sudo chage -M 30 -m 2 -W 7 sarah
+   25  sudo chage -M 30 -m 2 -W 7 mike
+   26  sudo mkdir -p /backups
+   27  ls
+   28  echo "#\!/bin/bash" > script.sh
+   29  sudo mkdir -p /backups
+   30  ls
+   31  pwd
+   32  nano script.h
+   33  tar -czf /backups/apache_backup_$(date +\%F).tar.gz /etc/httpd/ /var/www/html/" | sudo tee /usr/local/bin/apache_backup.sh
+exit
+quit
+   34  echo 'tar -czf /backups/apache_backup_$(date +%F).tar.gz /etc/httpd/ /var/www/html/' | sudo tee /usr/local/bin/apache_backup.sh
+   35  sudo chmod +x /usr/local/bin/apache_backup.sh
+   36  echo '#!/bin/bash
+tar -czf /backups/nginx_backup_$(date +%F).tar.gz /etc/nginx/ /usr/share/nginx/html/' | sudo tee /usr/local/bin/nginx_backup.sh
+   37  sudo chmod +x /usr/local/bin/nginx_backup.sh
+   38  crontab -e
+   39  ls -lh /backups/
+   40  tar -tzf /backups/apache_backup_$(date +\%F).tar.gz
+   41  sudo mkdir -p /backups
+   42  echo '#!/bin/bash
+tar -czf /backups/apache_backup_$(date +%F).tar.gz /etc/httpd/ /var/www/html/' | sudo tee /usr/local/bin/apache_backup.sh
+   43  sudo chmod +x /usr/local/bin/apache_backup.sh
+   44  echo '#!/bin/bash
+tar -czf /backups/nginx_backup_$(date +%F).tar.gz /etc/nginx/ /usr/share/nginx/html/' | sudo tee /usr/local/bin/nginx_backup.sh
+   45  sudo chmod +x /usr/local/bin/nginx_backup.sh
+   46  crontab -e
+   47  ls -lh /backups/
+   48  tar -tzf /backups/apache_backup_$(date +%F).tar.gz
+   49  ls -lh /backups/
+   50  sudo /usr/local/bin/apache_backup.sh
+   51  ls -ld /etc/httpd/ /etc/apache2/
+   52  apachectl -v
+   53  which apache2
+   54  sudo apt intall apache2
+   55  sudo apt install apache2
+   56  sudo apt install apache2 -y
+   57  ls -ld /etc/apache2/
+   58  sudo systemctl start apache2
+   59  sudo systemctl enable apache2
+   60  sudo systemctl status apache2
+   61  echo '#!/bin/bash
+tar -czf /backups/apache_backup_$(date +%F).tar.gz /etc/apache2/ /var/www/html/' | sudo tee /usr/local/bin/apache_backup.sh
+   62  sudo chmod +x /usr/local/bin/apache_backup.sh
+   63  sudo /usr/local/bin/apache_backup.sh
+   64  ls -lh /backups/
+   65  tar -tzf /backups/apache_backup_$(date +%F).tar.gz
+   66  ls -lh /backups/
+   67  tar -tzf /backups/apache_backup_$(date +\%F).tar.gz
+   68  tar -tzf /backups/nginx_backup_$(date +\%F).tar.gz
+   69  sudo /usr/local/bin/nginx_backup.sh
+   70  ls -ld /etc/nginx/ /usr/share/nginx/html/
+   71  sudo apt install nginx -y
+   72  sudo systemctl start nginx
+   73  sudo systemctl enable nginx
+   74  sudo systemctl status nginx
+   75  sudo systemctl status apache
+   76  sudo systemctl status apache2
+   77  sudo netstat -tulnp | grep :80
+   78  sudo lsof -i :80
+   79  sudo nano /etc/apache2/ports.conf
+   80  sudo nano /etc/apache2/sites-available/000-default.conf
+   81  sudo systemctl restart apache2
+   82  sudo systemctl status apache2
+   83  ls -lh /backups/
+   84  tar -tzf /backups/apache_backup_$(date +\%F).tar.gz
+   85  tar -tzf /backups/nginx_backup_$(date +\%F).tar.gz
+   86  crontab e
+   87  crontab -e
+   88  history
